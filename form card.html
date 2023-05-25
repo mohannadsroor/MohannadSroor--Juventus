@@ -1,0 +1,114 @@
+<meta charset="utf-8">
+<meta name="keywords" content="form,company,name">    
+<title>form</title>
+    
+    
+    
+
+<style>
+body{
+     font-size: 20pt; color: black; 
+                 font-family: cursive,script,arial, sans-serif;   
+ background-color:#96AAD2;
+        
+ }
+  form {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  input[type="text"], input[type="email"], input[type="tel"], input[type="url"], textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 12px;
+    resize: vertical;
+  }
+  select {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 12px;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  .error {
+    color: red;
+  }  
+ @keyframes example {
+    0% {
+      transform: translateX(0);
+      background-color: white;
+    }
+    50% {
+      transform: translateX(200px);
+      background-color: #96AAD2;
+    }
+    100% {
+      transform: translateX(0);
+      background-color: white;
+    }
+  }
+  .animated-element {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  } 
+</style></head><body>
+ <div class="animated-element"><center>form </center></div>
+
+ <form method="post" action="/process-registration">
+ 
+
+  <label for="company-name">Company Name:</label>
+  <input type="text" id="company-name" name="company-name" required>
+  <br>
+  <label for="contact-name">Contact Name:</label>
+  <input type="text" id="contact-name" name="contact-name" required>
+  <br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  <br>
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" required>
+  <br>
+  <label for="website">Website:</label>
+  <input type="url" id="website" name="website" >
+  <br>
+  <label for="industry">Industry:</label>
+  <select id="industry" name="industry">
+    <option value="">Select an industry</option>
+    <option value="manufacturing">Manufacturing</option>
+    <option value="retail">Retail</option>
+    <option value="technology">Technology</option>
+    <option value="healthcare">Healthcare</option>
+    <option value="finance">Finance</option>
+  </select>
+  <br>
+  <label for="description">Description of your company:</label>
+  <textarea id="description" name="description" rows="5" required></textarea>
+  <br>
+  <input type="submit" value="Submit">
+ 
+ 
+ </body></html>
